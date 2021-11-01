@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./pages/Home";
+import GameHome from "./views/index.vue"
 import Profile from "./pages/Profile";
 import SetValue from "./pages/SetValue";
 
@@ -16,6 +17,11 @@ export default new Router({
             path: "/",
             name: "home",
             component: Home
+        },
+        {
+            path: "/gameHome",
+            name: "GameHome",
+            component: GameHome 
         },
         {
           path: "/set-value",

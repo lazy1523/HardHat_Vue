@@ -1,6 +1,10 @@
 <template>
   <div>
+       <keep-alive>
+            <router-view />
+          </keep-alive>
 
+<!-- 
     <Navbar />
 
     <div class="container-fluid">
@@ -10,13 +14,10 @@
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
-          <keep-alive>
-            <router-view />
-          </keep-alive>
-
+       
         </main>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -24,7 +25,6 @@
 <script>
 import Navbar from './components/Navbar.vue';
 import Sidebar from './components/Sidebar.vue';
-
 export default {
   name: 'App',
   components: {
